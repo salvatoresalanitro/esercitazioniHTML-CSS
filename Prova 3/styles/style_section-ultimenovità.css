@@ -1,0 +1,136 @@
+* {
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+
+/* style header */
+
+.last-news>header>h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/*style tabs*/
+
+.tabcontainer {
+    border-bottom: 2px solid rgb(196, 196, 196);
+}
+
+.tabs {
+    display: flex;
+    padding-bottom: 0.7rem;
+}
+
+.tabs a {
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.tabs a:first-child {
+    margin-left: 11rem;             /* ? */
+}
+
+.tabs a:hover {
+    background-color: rgb(211, 211, 211);
+    color: rgb(78, 78, 78);                     /* non tutti i background degli elementi toccano le linee verticali e la grandezza non tocca il bordo sotto*/
+    height: 1.2rem;
+}
+
+/* style vertical lines */
+
+.vl {
+    border-left: 2px solid rgb(196, 196, 196);
+    height: 3rem;                                     /* renderli più piccoli e allinearli al centro */
+}
+
+/* style blocks */
+
+.newscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 4rem;
+}
+
+.containerimg > img {
+    width: 100%;
+}
+
+.newscontainer > .container {
+    width: 360px;
+    height: auto;
+    margin: 0.62rem;
+    box-shadow: 2px 2px 10px rgb(163, 163, 163);
+}
+
+.newscontainer > .container:hover {
+    box-shadow: 0 15px 30px gray;
+    transition: 0.7s;
+}
+
+/*style elements inside blocks*/
+
+.subcontainer {
+    display: grid;
+    grid-template-areas: 
+        "h5 h4"
+        "h2 h2"
+        "p p";
+}
+
+.subcontainer > h5 {
+    grid-area: h5;
+    font-size: 0.85rem;
+    color: rgb(255, 85, 85);
+    padding: 1.4rem 0 0 1.4rem ;
+    align-self: baseline;
+}
+
+
+.subcontainer > h4 {
+    grid-area: h4;
+    font-size: 0.9rem;
+    padding: 1.4rem 1.4rem 0 1rem;
+    align-self: baseline;
+}
+
+.subcontainer > h2 {
+    grid-area: h2;
+    font-size: 1.3rem;
+    padding: 0.8rem 1.4rem 0.8rem 1.4rem;
+}
+
+.subcontainer > p {
+    grid-area: p;
+    padding: 0 1.4rem 1.4rem 1.4rem;
+}
+
+/* style details link */
+
+.details-link {
+    display: flex;
+    justify-content: center;
+}
+
+.details-link > a {
+    font-size: 1.2rem;
+    margin: 2.5rem 0;
+    padding: 1.4rem 1.8rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+}
+
+.details-link > a:hover {
+    padding: 1.8rem 2.2rem;
+    transition: 0.15s;
+}
